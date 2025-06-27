@@ -1,92 +1,123 @@
-# 📝 Requirement Analysis in Software Development
+# 📘 Requirement Analysis in Software Development
+
+This project sharpens skills essential for managing and delivering robust software systems by focusing on the cornerstone of successful development: **Requirement Analysis**.
+
+---
 
 ## 📌 Introduction
-This repository documents the Requirement Analysis phase for a **Hotel Booking Management System**. It simulates a real-world project where software requirements are analyzed, structured, and visually represented to guide developers and stakeholders toward successful implementation.
+
+This repository provides a structured breakdown of the Requirement Analysis phase in the Software Development Lifecycle (SDLC), using a **Hotel Booking Management System** as the case study.
+
+🎯 **Goals**:
+- Identify and document both functional and non-functional requirements.
+- Explore core activities like requirement gathering, elicitation, and validation.
+- Support teams in building clear, user-focused systems.
 
 ---
 
-## 🔍 What is Requirement Analysis?
+## 📘 What is Requirement Analysis?
 
-**Requirement Analysis** is the process of identifying and defining what a system should do. It involves gathering input from stakeholders and turning it into actionable, validated requirements.
+Requirement Analysis is the process of gathering, interpreting, and documenting what a system needs to do from both a technical and user perspective. It ensures a shared understanding between business and technical stakeholders.
 
-In the **Software Development Lifecycle (SDLC)**, it serves as the foundation for design, development, and testing. Without proper requirement analysis, projects risk miscommunication, delays, or failure.
+**Why it matters**:
+- ✅ Brings Clarity: Ensures stakeholder expectations are captured precisely.
+- 🧭 Defines Scope: Helps manage boundaries and reduce scope creep.
+- 💡 Informs Design: Provides the blueprint for the architecture.
+- 📊 Enables Estimation: Supports accurate planning.
+- 🛠️ Improves Quality: Increases the likelihood of meeting user needs.
 
 ---
 
-## 💡 Why is Requirement Analysis Important?
+## ❗ Why is Requirement Analysis Important?
 
-1. ✅ **Ensures Clarity Among Stakeholders**  
-   Everyone shares the same expectations and understanding of the system.
+1. 🎯 **Clarity for All**
+   - Prevents misunderstandings by defining exact expectations.
 
-2. ⚠️ **Reduces Risk and Cost**  
-   Prevents unnecessary rework and ensures timely delivery.
+2. 📦 **Scope Control**
+   - Helps avoid feature creep and budget overruns.
 
-3. 🧪 **Guides Development and Testing**  
-   Helps developers and testers work with confidence and direction.
+3. 🏗️ **Guides Design and Development**
+   - Sets a foundation for every phase in SDLC.
 
 ---
 
 ## 🛠️ Key Activities in Requirement Analysis
 
-- 🗣️ **Requirement Gathering** – Collect information via interviews, surveys, and observations.
-- 🧠 **Requirement Elicitation** – Discover both stated and hidden needs.
-- 📝 **Requirement Documentation** – Organize requirements into structured formats.
-- 🧮 **Requirement Analysis & Modeling** – Break down, structure, and relate requirements.
-- ✅ **Requirement Validation** – Confirm requirements with stakeholders.
+| Activity | Description |
+|---------|-------------|
+| 📥 **Requirement Gathering** | Conduct interviews, surveys, and observe user behavior. |
+| ✍️ **Elicitation** | Use brainstorming, storyboarding, and prototyping to extract deeper needs. |
+| 📚 **Documentation** | Convert needs into use cases, user stories, and specifications. |
+| 📊 **Modeling** | Create diagrams like DFDs, ERDs, and use case diagrams. |
+| ✅ **Validation** | Review with stakeholders and define acceptance criteria. |
 
 ---
 
-## 🧾 Types of Requirements
+## 🧩 Types of Requirements
 
 ### ⚙️ Functional Requirements
-Describe **what** the system should do.
+What the system **does**.
 
-**Examples:**
-- Users can view hotel room availability by date/location.
-- Guests can make bookings and receive confirmations.
-- Admins can manage room listings and availability.
+**Examples**:
+- 🔍 Search for properties by date and location.
+- 👤 User login and profile management.
+- 📅 Book and cancel reservations.
+- 📨 Email confirmation after booking.
 
-### 📊 Non-Functional Requirements
-Describe **how** the system behaves.
+### 🛡️ Non-Functional Requirements
+How the system **performs**.
 
-**Examples:**
-- System must respond within 2 seconds for search queries.
-- Support for 10,000 concurrent users.
-- Responsive design for mobile, tablet, and desktop devices.
+**Examples**:
+- 🚀 Pages load in under 2 seconds.
+- 🔐 Passwords are encrypted; protection from SQL injection.
+- 📈 Handles 1000+ users concurrently.
+- 📱 Mobile responsive and accessible UI.
 
 ---
 
-## 🧑‍🤝‍🧑 Use Case Diagrams
+## 🧾 Use Case Diagram
 
-**Use Case Diagrams** are visual tools that map system interactions from the user’s perspective.
+Use Case Diagrams visually represent how users interact with a system. They help align understanding early.
 
-### 🔍 Benefits
-- Promote stakeholder communication.
-- Offer a high-level system overview.
-- Identify missing or redundant requirements early.
+**Actors**:
+- 👥 Guest
+- 👤 Registered User
+- 👨‍💼 Admin
 
-![Use Case Diagram](https://drive.google.com/uc?export=view&id=11cYVgc849voE6yuz2GEd4mYkL0yPWprd)
+**Use Cases**:
+- Search Property
+- View Listings
+- Register/Login
+- Book/Cancel
+- Receive Confirmation
+- Manage Listings
+
+📎 **View Use Case Diagram**:  
+## 🧾 Use Case Diagram
+
+![Use Case Diagram](./alx-booking-uc.png)
 
 ---
 
 ## ✅ Acceptance Criteria
 
-**Acceptance Criteria** define the specific conditions under which a feature is considered complete and acceptable.
+Acceptance Criteria define the “done” condition for features and prevent ambiguity.
 
-### 🏁 Why It Matters
-- Prevents misunderstandings.
-- Helps QA/testers know exactly what to verify.
-- Anchors development to measurable goals.
+### Example: **Checkout Feature**
 
-### 🧾 Example: Checkout Feature
-
-- 🔐 User must be logged in.
-- 💳 Valid payment method must be selected.
-- 📨 Confirmation email sent within 1 minute of payment.
-- 📁 Booking is saved and viewable under “My Reservations.”
+- 🗓️ User selects available check-in/check-out dates.
+- 💳 Provides valid payment details.
+- 🔒 Payment is securely processed.
+- 📄 Confirmation is shown on screen with booking summary.
+- 📬 Email is sent within 2 minutes.
+- 📅 Dates become unavailable to others after booking.
+- ❌ If payment fails, booking is not confirmed and dates remain available.
 
 ---
 
-## 📜 License
+## 📂 Repository Structure
 
-© 2025 ALX, All rights reserved.
+```bash
+requirement-analysis/
+├── README.md            # Project documentation
+├── alx-booking-uc.png   # (Optional) Use Case Diagram Image
